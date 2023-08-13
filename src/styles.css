@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.box1 {
+  background-color: white;
+  grid-column: 1/3;
+}
+
+.box2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: lightpink;
+}
+
+.element {
+  background-color: lightblue;
+}
+
+.panel {
+  margin: 10px;
+  background-color: crimson;
+  height: 500px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  transition: 500ms;
+}
+
+.panel > div {
+  background-color: navajowhite;
+  transition: 500ms;
+}
+
+.pane1:hover {
+  background-color: crimson;
+}
